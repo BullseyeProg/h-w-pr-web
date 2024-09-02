@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Таблиці та форми</h1>
+    <h2>Таблиці</h2>
+    <table border="1">
+        <caption>Статистика продажу автомобілів</caption>
+        <thead>
+        <tr>
+            <td rowspan="2">Марка автомобіля</td>
+            <td colspan="3">1-квартал</td>
+        </tr>
+        <tr>
+            <td>Січень</td>
+            <td>Лютий</td>
+            <td>Березень</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Toyota</td>
+            <td>270 000</td>
+            <td>250 000</td>
+            <td>300 000</td>
+        </tr>
+        <tr>
+            <td>Volkswagen</td>
+            <td>250 000</td>
+            <td>200 000</td>
+            <td>270 000</td>
+        </tr>
+        <tr>
+            <td>Renault-Nissan</td>
+            <td>130 000</td>
+            <td>150 000</td>
+            <td>200 000</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td>ВСЬОГО:</td>
+            <td>650 000</td>
+            <td>600 000</td>
+            <td>770 000</td>
+        </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+<table border="1">
+    <tr>
+        <td rowspan="2">день тижня</td>
+        <td rowspan="2">академічні години</td>
+        <td colspan="3">шифр группи</td>
+    </tr>
+    <tr>
+        <td>КН2.01</td>
+        <td>КН2.02</td>
+        <td>КН2.03</td>
+    </tr>
+    <tr>
+        <td rowspan="4">понеділок</td>
+        <td>8.00-9.20</td>
+        <td colspan="3"> Веб техонології та веб-дизайн</td>
+    </tr>
+    <tr>
+        <td>9.35-10.55</td>
+        <td>Об'єктно-орієнтоване програмування</td>
+        <td>Комп'ютерна дискретна математика</td>
+        <td>Теорія алгоритмів</td>
+    </tr>
+    <tr>
+        <td>11.10-12.30</td>
+        <td colspan="3">Теорія алгоритмів</td>
+    </tr>
+    <tr>
+        <td>12.45-14.05</td>
+        <td>Комп'ютерна дискретна математика</td>
+        <td>Теорія алгоритмів</td>
+        <td>Об'єктно-орієнтоване програмування</td>
+    </tr>
+</table>
+
+    <hr>
+
+    <h2>Форми</h2>
+
+<div>
+    <form action="#" method="post">
+        <div>
+            <label for="login">Логін:</label>
+            <input type="text" name="login" class="text" id="login" required>
+        </div>
+
+        <div>
+            <label for="password">Пароль:</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+
+        <div>
+            <a href="#">Забули пароль?</a>
+        </div>
+
+        <div>
+            <input type="submit" value="Увійти">
+        </div>
+    </form>
+</div>
+
+    <hr>
+
+<form action="#" method="post">
+    <div>
+        <label for="name">Ім'я:</label>
+        <input type="text" name="name" id="name" required>
+    </div>
+    <div>
+        <label for="email">Мейл:</label>
+        <input type="email" name="email" id="email" placeholder="example@mail.com" required>
+    </div>
+    <div>
+        <label for="phone">Номер телефону:</label>
+        <input type="tel" name="phone" id="phone" value="+380" required>
+    </div>
+    <div>
+        <input type="submit" value="Увійти">
+    </div>
+</form>
+
+    <hr>
+
+<form action="#" method="post">
+    <label>
+        <input type="text" name="name" placeholder="Ваше ім'я" required>
+    </label><br>
+    <label>
+        <input type="email" name="email" placeholder="Ваша e-mail" required>
+    </label><br>
+    <label>
+        <input type="tel" name="phone" placeholder="Ваш телефон" required>
+    </label><br>
+    <label>
+        <input type="password" name="password" placeholder="Пароль" required>
+    </label><br>
+    <label>
+        <input type="password" name="password_confirmation" placeholder="Підтвердження паролю" required>
+    </label>
+
+    <div>
+        <input type="submit" value="Реєстрація">
+    </div>
+</form>
+
+
+    <hr>
+
+<form action="#" method="post">
+    <div>
+        <label for="error-name">Назва помилки:</label><br>
+        <input type="text" id="error-name" name="error-name" required>
+    </div>
+    <div>
+        <label for="error-description">Опис:</label><br>
+        <textarea id="error-description" name="error-description" rows="4" required></textarea>
+    </div>
+    <div>
+        <label for="operating-system">Операційна система:</label><br>
+        <select id="operating-system" name="operating-system" required>
+            <option value="Windows">Windows</option>
+            <option value="macOS">macOS</option>
+            <option value="Linux">Linux</option>
+        </select>
+    </div>
+    <div>
+        <label>Браузер:</label><br>
+        <input type="radio" id="chrome" name="browser" value="chrome" required> <label for="chrome">Chrome</label><br>
+        <input type="radio" id="firefox" name="browser" value="firefox"> <label for="firefox">Firefox</label><br>
+        <input type="radio" id="safari" name="browser" value="safari"> <label for="safari">Safari</label>
+    </div>
+    <div>
+        <label for="assigned-to">Кому призначено:</label><br>
+        <select id="assigned-to" name="assigned-to" required>
+            <option value="dev">Команда розробки</option>
+            <option value="test">Команда тестування</option>
+            <option value="manag">Менеджер проекту</option>
+        </select>
+    </div>
+    <div>
+        <label for="priority">Приорітет:</label><br>
+        <select id="priority" name="priority" required>
+            <option value="low">Низький</option>
+            <option value="medium">Середній</option>
+            <option value="high">Високий</option>
+        </select>
+    </div>
+    <div>
+        <label for="screenshot">Скриншот:</label><br>
+        <input type="file" id="screenshot" name="screenshot">
+    </div>
+    <div>
+        <label for="status">Статус:</label><br>
+        <select id="status" name="status" required>
+            <option value="new">Новий</option>
+            <option value="in-progress">В процесі</option>
+            <option value="resolved">Вирішено</option>
+        </select>
+    </div>
+    <div>
+        <button type="submit">Надіслати</button>
+    </div>
+</form>
+</body>
+</html>
